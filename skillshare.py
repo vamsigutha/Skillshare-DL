@@ -33,6 +33,7 @@ class Skillshare(object):
 
     def download_course_by_class_id(self, class_id):
         data = self.fetch_course_data_by_class_id(class_id=class_id)
+        print(data)
         teacher_name = None
 
         if 'vanity_username' in data['_embedded']['teacher']:
