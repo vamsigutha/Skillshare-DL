@@ -63,6 +63,7 @@ class Skillshare(object):
         if not os.path.exists(base_path):
             os.makedirs(base_path)
         print(data)
+        
         for s in u['_embedded']['sessions']['_embedded']['sessions']:
             video_id = None
 
